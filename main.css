@@ -94,6 +94,26 @@ li {
 }
 
 /*--------------------------------------------
+*	FORM
+---------------------------------------------*/
+.form {
+	margin-bottom: 20px;
+}
+.form-label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-input {
+	border: 1px solid #39393b;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 10px;
+	padding: 10px;
+	width: 100%;
+}
+/*--------------------------------------------
 *	ANIMATION
 ---------------------------------------------*/
 
