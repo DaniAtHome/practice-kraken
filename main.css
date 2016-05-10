@@ -14,7 +14,10 @@
 *	BASE
 ---------------------------------------------*/
 body {
-	
+	color: #39393b;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,17 +31,16 @@ margin: 10px;
 }
 
 a {
+	color: #097dbc;
 	
 }
-
-ol {
-	padding: 0
-	margin: 0
-	list-style-type: none;
-	
+a:active, 
+a:hover,
+a:focus {
+	color: #39393b;
 }
 
-ul {
+ol, ul {
 	padding: 0
 	margin: 0
 	list-style-type: none;
