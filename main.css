@@ -44,3 +44,9 @@ li {
 	text-align: center;
 	color: #ffffff;
 }
+.logo {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
