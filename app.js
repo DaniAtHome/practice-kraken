@@ -8,9 +8,16 @@ $(document).ready(function() {
 		
 		$(this).text('Liked')
 		.addClass('is-liked');
+	});
+	// give a href class of .js-like'
+	
+	$('.js-add-link').on('click', function(event) {
+		event.preventDefault();
+		
+		$('.js-form').toggleClass('is-visible');
 	})
 });
 
-// give a href class of .js-like'
+
 
 

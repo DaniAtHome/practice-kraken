@@ -23,21 +23,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	
 }
-p {
-font-family: Calibri, Helvetica, sans-serif;	
-font-size: 20px;
-margin: 10px;
-;
-}
 
-a {
-	color: #097dbc;
-	
-}
-a:active, 
-a:hover,
-a:focus {
-	color: #39393b;
+p {
+
 }
 
 ol, ul {
@@ -47,23 +35,34 @@ ol, ul {
 	
 }
 
-li {
+a {
+	color: #097dbc;
+	transition: 0.2s ease-in-out;
 	
 }
+a:active, 
+a:hover,
+a:focus {
+	color: #39393b;
+}
+
 /*--------------------------------------------
 *	HERO
 ---------------------------------------------*/
+
 .hero {
 	background-color: #097dbc;
 	color: #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding: 20px 0;
 	text-align: center;
 	
 }
+
 /*--------------------------------------------
 *	LOGO
 ---------------------------------------------*/
+
 @font-face {
 	font-family: BudgetFonts;
 	src: local("CiscoSansRegular"), 
@@ -78,9 +77,11 @@ li {
 	font-size: 44px;
 	
 }
+
 /*--------------------------------------------
 *	CONTAINER
 ---------------------------------------------*/
+
 .container {
 	margin: 0 auto;
 	max-width: 800px;
@@ -89,6 +90,7 @@ li {
 /*--------------------------------------------
 *	States
 ---------------------------------------------*/
+
 .is-liked {
 	animation: flash 2s;
 }
@@ -96,9 +98,21 @@ li {
 /*--------------------------------------------
 *	FORM
 ---------------------------------------------*/
+
 .form {
+	height: 0;
 	margin-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
 }
+
+.form.is-visible {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
 .form-label {
 	display: block;
 	font-weight: bold;
@@ -109,10 +123,11 @@ li {
 	border: 1px solid #39393b;
 	border-radius: 4px;
 	box-sizing: border-box;
-	font-size: 10px;
+	font-size: 20px;
 	padding: 10px;
 	width: 100%;
 }
+
 /*--------------------------------------------
 *	ANIMATION
 ---------------------------------------------*/
@@ -120,8 +135,8 @@ li {
 @keyframes flash {
 	from, 50%, to {
 		opacity: 0;
-}
-25%, 75% {
-	opacity: 1;
-  }
+	}
+	25%, 75% {
+		opacity: 1;
+  	}
 }
