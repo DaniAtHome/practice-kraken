@@ -30,8 +30,8 @@ p {
 }
 
 ol, ul {
-	padding: 0
-	margin: 0
+	padding: 0;
+	margin: 0;
 	list-style-type: none;
 	
 }
@@ -48,13 +48,40 @@ a:focus {
 }
 
 footer {
+	display: inline;
+	font-size: 10px;
+	text-align: right;
+}
+
+/*--------------------------------------------
+*	LOGO BLOCK
+---------------------------------------------*/
+.container {
+	margin: 0, auto;
+	max-width: 1000px;
 	
 }
-/*--------------------------------------------
-*	section name here
----------------------------------------------*/
 
+.logo-block {
+	background-color: #ffffff;
+	display: inline;
+	margin-bottom: 40px;
+	padding: 30px 30px 0 30px;
+	text-align: center;
+}
 
+.logo-image {
+	float: left;
+	padding: 20px 0 0 40px;
+	
+}
+
+.logo-text {
+	color: #097dbc;
+	font-size: 36px;
+	list-style-type: none;
+	padding: 40px 0;
+}
 
 /*--------------------------------------------
 *	section name here
