@@ -3,10 +3,14 @@
 *	US Meeting Cost Estimator Stylesheet
 *
 *   Color Palette         : #ffffff (white)
-*						  : #097dbc (blue)
+*						  : #004baf (lake blue)
+*						  : #097dbc (med blue)
+*						  : #049fd9 (Cisco blue)
 *						  : #39393b (dk grey)
+*						  : #e9e9e9 (light grey)
 *						  : #c12126 (red)
-*                         : #008516 (green)
+*                         : #008516 (dk green)
+*						  : #abc233 (sage green)
 *
 *********************************************/
 
@@ -38,7 +42,10 @@ ol, ul {
 
 a {
 	color: #097dbc;
+	font-weight: bold;
+	text-decoration: none;
 	transition: 0.2s ease-in-out;
+	
 	
 }
 a:active, 
@@ -50,8 +57,10 @@ a:focus {
 footer {
 	display: inline;
 	font-size: 10px;
+	padding: 5px 45px 2px 5px;
 	text-align: right;
 }
+
 
 /*--------------------------------------------
 *	LOGO BLOCK
@@ -77,25 +86,70 @@ footer {
 }
 
 .logo-text {
-	color: #097dbc;
+	color: #049fd9;
 	font-size: 36px;
 	list-style-type: none;
 	padding: 40px 0;
 }
 
 /*--------------------------------------------
-*	section name here
+*	WELCOME
 ---------------------------------------------*/
+.welcome {
+	font-size: 18px;
+	max-width: 900px;
+	margin: 5px 5px 60px 40px;
+}
 
 /*--------------------------------------------
-*	ANIMATION
+*	ACKNOWLEDGE
+---------------------------------------------*/
+.acknowledge {
+	font-size: 18px;
+	max-width: 900px;
+	margin: 5px 5px 60px 40px;
+	
+}
+
+.disclosure {
+	color: #004baf;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*--------------------------------------------
+*	BUTTON
+---------------------------------------------*/
+.button {
+	background-color: #049fd9;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px #39393b;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	height: 35px;
+	line-height: 0;
+	margin: 0px 0px 0px 700px;
+	max-width: 150px;
+	padding: 5px;
+	text-align: center;
+	
+}
+.button:hover {
+	background-color: #008516;
+	transition: 0.2s ease-in-out;
+	
+}
+
+.button-text {
+	color: #ffffff;
+}
+
+.button-text:hover {
+	color: #ffffff;
+}
+
+/*--------------------------------------------
+*	FOOTER
 ---------------------------------------------*/
 
-@keyframes flash {
-	from, 50%, to {
-		opacity: 0;
-	}
-	25%, 75% {
-		opacity: 1;
-  	}
-}
