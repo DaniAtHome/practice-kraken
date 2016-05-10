@@ -35,3 +35,12 @@ ul {
 li {
 	
 }
+/*--------------------------------------------
+*	HERO
+---------------------------------------------*/
+.hero {
+	background-color: #097dbc;
+	padding: 40px 0;
+	text-align: center;
+	color: #ffffff;
+}
