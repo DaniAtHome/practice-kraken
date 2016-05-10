@@ -63,19 +63,16 @@ a:focus {
 *	LOGO
 ---------------------------------------------*/
 
-@font-face {
-	font-family: BudgetFonts;
-	src: local("CiscoSansRegular"), 
-	url("CiscoSansRegular.otf") format ('opentype');
-	src: url('quicksand-light.woff2') format('woff2'),
-	url('quicksand-light.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 .logo {
-	font-family: BudgetFonts;
 	font-size: 44px;
+	display: inline-list-item;
+	list-style-type: none;
 	
+}
+
+.logo-image {
+	display: inline-list-item;
+	float: right;
 }
 
 /*--------------------------------------------
