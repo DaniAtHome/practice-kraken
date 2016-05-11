@@ -34,9 +34,21 @@
 			No. of Expected Attendees: <br>
 			<input type='text' id='attendees'><br>
 			No. of Attendees Needing Domestic Air Travel: <br>
-			<input type='text' id='dom-air'><br>
-			No. of Attendees Needing Int'l Air Travel: <br>
+			<input type='text' id='dom-air' onclick='myFunction()'><br>
+			<script>
+			function myFunction() {
+				alert("Global Meetings and Events Policy requires a business justification when traveling to/from an internal business meeting. If you have not done so, please explore meeting participation options via collaboration tools, such as telepresence, CiscoTV or WebEx.");
+			}
+			</script>
+			No. of Attendees Needing Int'l Air Travel:<br>
 			<input type='text' id='intl-air'><br>
+			No. of Attendees Needing Sleeping Rooms:<br>
+			<input type='text' id='hotelroom' onclick='myFunction()'><br>
+			<script>
+			function myFunction() {
+				alert("Guidance: In addition to the above, Global Travel policy provides that employees who reside 50 or fewer miles from the meeting location generally may not expense sleeping room costs.");
+			}
+			</script>
 			Meeting Type: <br>
 			<input type='text' id='meetingtype'><br>
 			<input type='reset' value='Clear Form'><br>
@@ -45,10 +57,10 @@
 		
 		
 		<div class='exit-or-back'>
-		<p><a href='#' class='exit-button'>Back</a></p>
+		<p><a href='acknowledgement.html' class='exit-button'>Back</a></p>
 	</div>
 	<div class='start-agree-next'>
-		<p><a href='http://wwwin.cisco.com/c/cec/index.html' class='action-button'>Next</a></p>
+		<p><a href='#' class='action-button'>Next</a></p>
 	</div>
 		
 	</main>
