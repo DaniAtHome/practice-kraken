@@ -21,21 +21,24 @@
 	</header>
 	<main class='basic-info-form'>
 		<form>
-			<form action='#' method='post' target='_blank' enctype='application/x-www-form-urlencoded' autocomplete='off' novalidate>
+			<form action='#' method='post' target='_blank' enctype='application/x-www-form-urlencoded' novalidate>
 			Meeting Location: <br>
-			<input type="text" name="meetinglocation"><br>
+			<input type='text' autocomplete='on' id='meetinglocation'><br>
+			
+			<! -- This field should auto populate based on the user's selection from the Select Meeting Location page. Should this be an 'output' field? -->
+			
 			Meeting Start Date: <br>
-			<input type="text" name="startdate"><br>
+			<input type='text' id='startdate'><br>
 			Meeting End Date: <br>
-			<input type="text" name="enddate"><br>
+			<input type='text' id='enddate'><br>
 			No. of Expected Attendees: <br>
-			<input type="text" name="attendees"><br>
+			<input type='text' id='attendees'><br>
 			No. of Attendees Needing Domestic Air Travel: <br>
-			<input type="text" name="dom-air"><br>
+			<input type='text' id='dom-air'><br>
 			No. of Attendees Needing Int'l Air Travel: <br>
-			<input type="text" name="intl-air"><br>
+			<input type='text' id='intl-air'><br>
 			Meeting Type: <br>
-			<input type="text" name="meetingtype"><br>
+			<input type='text' id='meetingtype'><br>
 			<input type='reset' value='Clear Form'><br>
 		</form>
 		
@@ -56,7 +59,7 @@
 	
 	
 	
-	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<script   src='https://code.jquery.com/jquery-2.2.3.min.js'   integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo='   crossorigin='anonymous'></script>
 	<script src='app.js'></script>
 	
 </body>
