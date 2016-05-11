@@ -34,35 +34,23 @@ p {
 }
 
 ol, ul {
+	
 	list-style-type: none;
 
 }
 
-a {
-	color: #097dbc;
-	font-weight: bold;
-	text-decoration: none;
-	transition: 0.2s ease-in-out;
-	
-	
-}
-a:active, 
-a:hover,
-a:focus {
-	color: #39393b;
-}
-
 footer {
+	
 	display: block;
 	font-size: 10px;
 	margin-top: 200px;
 	text-align: center;
 }
 
-
 /*--------------------------------------------
 *	LOGO BLOCK
 ---------------------------------------------*/
+
 .container {
 	margin: 0, auto;
 	max-width: 1000px;
@@ -91,6 +79,20 @@ footer {
 }
 
 /*--------------------------------------------
+*	TEXT LINKS
+---------------------------------------------*/
+
+.text-link {
+	color: #097dbc;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.text-link:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------------------------
 *	WELCOME
 ---------------------------------------------*/
 .welcome {
@@ -102,6 +104,7 @@ footer {
 /*--------------------------------------------
 *	ACKNOWLEDGE
 ---------------------------------------------*/
+
 .acknowledge {
 	font-size: 18px;
 	max-width: 900px;
@@ -118,6 +121,7 @@ footer {
 /*--------------------------------------------
 *	BASIC INFORMATION FORM
 ---------------------------------------------*/
+
 .basic-info-form {
 	padding: 5px 40px 5px 40px;
 	
@@ -127,8 +131,8 @@ input {
 	border: 1px solid #097dbc;
 	border-radius: 5px;
 	box-sizing: border-box;
-	margin: 8px 10px 0 15px;
-	padding: 12px 20px;
+	margin: 10px 10px 10px 15px;
+	padding: 10px 20px;
 	width: 25%;
 	
 }
@@ -153,55 +157,46 @@ input[type=reset] {
 /*--------------------------------------------
 *	BUTTONS
 ---------------------------------------------*/
-.container1 {
-	background-color: #e9e9e9;
+.start-agree-next {
+	background-color: #097dbc;
 	border-radius: 5px;
-	float: right;
+	float: left;
 	font-size: 16px;
-	margin-bottom: 10px;
-	margin-left: 10px;
+	margin: 10px 0 10px 10px; 
 	width: 100px;
 	text-align: center;
 	text-decoration: none;
 }
-
-.container2 {
-	background-color: #097dbc;
+.exit-or-back {
+	background-color: #9e9ea2;
 	border-radius: 5px;
-	float: right;
+	float: left;
 	font-size: 16px;
-	margin-bottom: 10px;
+	margin: 10px 10px 10px 55px; 
 	width: 100px;
 	text-align: center;
 	text-decoration: none;
 }
 
 .exit-button {
-	color: #39393b;
-}
-
-.exit-button:hover {
-	background-color: #c12126;
-	color: #ffffff;
-	transition: 0.2s ease-in-out;
+	color: #000000;
+	font-size: 20px;
+	text-decoration: none;
 }
 
 .action-button {
 	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-.action-button:hover {
-	background-color: #008516;
-	color: #e9e9e9;
+.exit-or-back:hover {
+	background-color: #e9e9e9;
 	transition: 0.2s ease-in-out;
 }
 
-.container1:hover {
-	background-color: #c12126;
-	transition: 0.2s ease-in-out;
-}
-
-.container2:hover {
+.start-agree-next:hover {
 	background-color: #008516;
 	transition: 0.2s ease-in-out;
 }
