@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>US Meetings Cost Estimator Tool: Acknowledgement</title>
+	<title>US Meetings Cost Estimator Tool: Basic Info</title>
 	<meta charset='utf-8' />
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,400' />
 <link rel='stylesheet' href='normalize.css' />
@@ -21,36 +21,50 @@
 	</header>
 	<main class='basic-info-form'>
 		<form>
-			<form action='#' method='post' target='_blank' enctype='application/x-www-form-urlencoded' novalidate>
+			<form action='#' method='post'>
 			Meeting Location: <br>
-			<input type='text' autocomplete='on' id='meetinglocation'><br>
-			
-			<! -- This field should auto populate based on the user's selection from the Select Meeting Location page. Should this be an 'output' field? -->
-			
+			<select name='Meeting Location'>
+				<option value='Atlanta'>Atlanta, GA</option>
+				<option value='Austin'>Austin, TX</option>
+				<option value='Boston'>Boston, MA</option>
+				<option value='Charlotte'>Charlotte, NC</option>
+				<option value='Denver'>Denver, CO</option>
+				<option value='Herndon'>Herndon, VA</option>
+				<option value='Houston'>Houston, TX</option>
+				<option value='Las Vegas'>Las Vegas, NV</option>
+				<option value='Miami'>Miami, FL</option>
+				<option value='NewYork'>New York, NY</option>
+				<option value='Philadelphia'>Philadelphia, PA</option>
+				<option value='Phoenix'>Phoenix, AZ</option>
+				<option value='SanDiego'>San Diego, CA</option>
+				<option value='SanFrancisco'>San Francisco, CA</option>
+				<option value='SanJose'>San Jose, CA</option>
+				<option value='Seattle'>Seattle, WA</option>
+			</select><br>
+			<br>
 			Meeting Start Date: <br>
-			<input type='text' id='startdate'><br>
+			<input type='text' id='startdate' required placeholder='mm-dd-yyyy'><br>
 			Meeting End Date: <br>
-			<input type='text' id='enddate'><br>
-			No. of Expected Attendees: <br>
-			<input type='text' id='attendees'><br>
+			<input type='text' id='enddate' required placeholder='mm-dd-yyyy'><br>
+			Estimated No. of Attendees:<br>
+			<input type='number' id='attendees' maxlength='4'><br>
 			No. of Attendees Needing Domestic Air Travel: <br>
-			<input type='text' id='dom-air' onclick='myFunction()'><br>
+			<input type='number' id='dom-air' maxlength='4' onclick='myFunction()'><br>
 			<script>
 			function myFunction() {
 				alert("Global Meetings and Events Policy requires a business justification when traveling to/from an internal business meeting. If you have not done so, please explore meeting participation options via collaboration tools, such as telepresence, CiscoTV or WebEx.");
 			}
 			</script>
 			No. of Attendees Needing Int'l Air Travel:<br>
-			<input type='text' id='intl-air'><br>
+			<input type='number' id='intl-air' maxlength='4'><br>
 			No. of Attendees Needing Sleeping Rooms:<br>
-			<input type='text' id='hotelroom' onclick='myFunction()'><br>
+			<input type='number' id='hotelroom' maxlength='4' onclick='myFunction()'><br>
 			<script>
 			function myFunction() {
-				alert("Guidance: In addition to the above, Global Travel policy provides that employees who reside 50 or fewer miles from the meeting location generally may not expense sleeping room costs.");
+				alert("Guidance: Global Expense and Global Travel policies limit or restrict reimbursement of sleeping room costs for employees who reside within 50 miles of a meeting location.");
 			}
 			</script>
-			Meeting Type: <br>
-			<input type='text' id='meetingtype'><br>
+			<br>
 			<input type='reset' value='Clear Form'><br>
 		</form>
 		
@@ -71,7 +85,7 @@
 	
 	
 	
-	<script   src='https://code.jquery.com/jquery-2.2.3.min.js'   integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo='   crossorigin='anonymous'></script>
+	<script src='https://code.jquery.com/jquery-2.2.3.min.js'   integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo='   crossorigin='anonymous'></script>
 	<script src='app.js'></script>
 	
 </body>

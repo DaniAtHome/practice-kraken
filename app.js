@@ -15,7 +15,10 @@ $(document).ready(function() {
 		event.preventDefault();
 		
 		$('.js-form').toggleClass('is-visible');
-	})
+	});
+    $(function() {
+       $('input[type='date']').datepicker();
+     });
 });
 
 

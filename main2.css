@@ -33,6 +33,23 @@ p {
 
 }
 
+.instruction {
+	color: #097dbc;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.sub-instruct {
+	color: #097dbc;
+	font-size: 18px;
+	font-weight: normal;
+	margin-left: 10px;
+	margin-top: 2px;
+	text-align: left;
+}
+
 ol, ul {
 	
 	list-style-type: none;
@@ -201,9 +218,16 @@ input[type=reset] {
 	transition: 0.2s ease-in-out;
 }
 
-
-
 /*--------------------------------------------
-*	ESCAPE BUTTON
+*	TABLES
 ---------------------------------------------*/
+
+table {
+	border-spacing: 10px 2px;
+	border-collapse: separate;
+}
+
+td {
+	padding: 6px;
+}
 
