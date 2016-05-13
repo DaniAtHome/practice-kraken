@@ -17,7 +17,15 @@
 /*--------------------------------------------
 *	BASE
 ---------------------------------------------*/
+@font-face {
+	font-family: Cisco;
+	src: url('CiscoSansExtraLight.otf');
+	
+}
+
 body {
+	
+	font-family: Cisco, sans-serif;
 	
 }
 
@@ -90,6 +98,7 @@ footer {
 
 .logo-text {
 	color: #049fd9;
+	font-family: Cisco;
 	font-size: 36px;
 	list-style-type: none;
 	padding: 40px 0;
@@ -216,6 +225,25 @@ input[type=reset] {
 .start-agree-next:hover {
 	background-color: #008516;
 	transition: 0.2s ease-in-out;
+}
+
+.get-started {
+	background-color: #097dbc;
+	border-radius: 5px;
+	float: right;
+	margin: 10px 0 10px 10px; 
+	width: 200px;
+	
+}
+
+.get-started-text {
+	color: #ffffff;
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 20px 46px; 
+	text-align: center;
+	text-decoration: none;
 }
 
 /*--------------------------------------------
