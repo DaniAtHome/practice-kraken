@@ -45,17 +45,29 @@ p {
 	color: #097dbc;
 	font-size: 24px;
 	font-weight: bold;
-	margin-left: 10px;
+	margin-left: 20px;
+	margin-bottom: 0;
 	text-align: left;
 }
 
 .sub-instruct {
 	color: #097dbc;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: normal;
-	margin-left: 10px;
-	margin-top: 2px;
-	text-align: left;
+	line height: 0;
+	margin-left: 20px;
+	margin-top: 0;
+}
+
+a {
+	
+	color: #ffffff;
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	
 }
 
 ol, ul {
@@ -115,7 +127,7 @@ footer {
 }
 
 .text-link:hover {
-	text-decoration: underline;
+	color: #c12126;;
 }
 
 /*--------------------------------------------
@@ -179,57 +191,13 @@ input[type=reset] {
 	
 }
 
-
 /*--------------------------------------------
 *	BUTTONS
 ---------------------------------------------*/
-.start-agree-next {
-	background-color: #097dbc;
-	border-radius: 5px;
-	float: left;
-	font-size: 16px;
-	margin: 10px 0 10px 10px; 
-	width: 100px;
-	text-align: center;
-	text-decoration: none;
-}
-.exit-or-back {
-	background-color: #9e9ea2;
-	border-radius: 5px;
-	float: left;
-	font-size: 16px;
-	margin: 10px 10px 10px 55px; 
-	width: 100px;
-	text-align: center;
-	text-decoration: none;
-}
-
-.exit-button {
-	color: #000000;
-	font-size: 20px;
-	text-decoration: none;
-}
-
-.action-button {
-	color: #ffffff;
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.exit-or-back:hover {
-	background-color: #e9e9e9;
-	transition: 0.2s ease-in-out;
-}
-
-.start-agree-next:hover {
-	background-color: #008516;
-	transition: 0.2s ease-in-out;
-}
 
 .get-started {
 	background-color: #097dbc;
-	border-radius: 5px;
+	border-radius: 30px;
 	float: right;
 	margin: 10px 0 10px 10px; 
 	width: 200px;
@@ -244,7 +212,92 @@ input[type=reset] {
 	margin: 20px 0 20px 46px; 
 	text-align: center;
 	text-decoration: none;
+	
 }
+
+.get-started:hover {
+	
+	background-color: #008516;
+	transition: 0.2s ease-in-out;
+	
+}
+
+.exit {
+	background-color: #9e9ea2;
+	border-radius: 25px;
+	float: right;
+	margin: 10px 0 10px 10px; 
+	width: 125px;	
+	
+}
+
+.exit-text {
+	color: #39393b;
+	margin-left: 40px;
+}
+
+.exit:hover {
+	background-color: #e9e9e9;
+	transition: 0.2s ease-in-out;
+}
+
+.agree {
+	background-color: #097dbc;
+	border-radius: 25px;
+	float: right;
+	margin: 10px 0 10px 10px; 
+	width: 125px;
+}
+
+.agree-text {
+	margin-left: 30px;
+	
+}
+
+.agree:hover {
+	background-color: #008516;
+	transition: 0.2s ease-in-out;
+}
+
+.back {
+	background-color: #9e9ea2;
+	border-radius: 25px;
+	float: right;
+	margin-left: 10px;
+	margin-right: 350px; 
+	width: 125px;
+}
+
+.back-text {
+	color: #000000;
+	margin-left: 37px;
+	
+}
+
+.back:hover {
+	background-color: #e9e9e9;
+	transition: 0.2s ease-in-out;
+	
+}
+
+.next {
+	background-color: #097dbc;
+	border-radius: 25px;
+	float:right;
+	margin: 0; 
+	width: 125px;
+	
+}
+
+.next-text {
+	margin-left: 38px;
+}
+
+.next:hover {
+	background-color: #008516;
+	transition: 0.2s ease-in-out;
+}
+
 
 /*--------------------------------------------
 *	TABLES
