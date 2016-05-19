@@ -59,6 +59,14 @@ p {
 	margin-top: 0;
 }
 
+.eventweb {
+	color: #097dbc;
+	font-size: 22px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
 a {
 	
 	color: #ffffff;
@@ -262,9 +270,10 @@ input[type=reset] {
 .back {
 	background-color: #9e9ea2;
 	border-radius: 25px;
+	display: inline;
 	float: right;
 	margin-left: 10px;
-	margin-right: 350px; 
+	margin-right: 100px; 
 	width: 125px;
 }
 
@@ -283,6 +292,7 @@ input[type=reset] {
 .next {
 	background-color: #097dbc;
 	border-radius: 25px;
+	display: inline;
 	float:right;
 	margin: 0; 
 	width: 125px;
@@ -297,6 +307,7 @@ input[type=reset] {
 	background-color: #008516;
 	transition: 0.2s ease-in-out;
 }
+
 
 
 /*--------------------------------------------
